@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+:root{
+	---red: hsl(0, 78%, 62%);
+	---cyan: hsl(180, 62%, 55%);
+	---orange: hsl(34, 97%, 64%);
+	---blue: hsl(212, 86%, 64%);
+	---very-dark-blue: hsl(234, 12%, 34%);
+	---grayish-blue: hsl(229, 6%, 66%);
+	---very-light-gray: hsl(0, 0%, 98%);
+}
+*{
+	margin: 0 0;
+	padding: 0 0;
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+}
+body{
+	background-color: white;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	padding: 40px 50px;
+}
+.text-wrapper {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.text-wrapper h1 {
+	font-size: 24px;
+	color: black;
+	font-weight: 200;
+}
+.text-wrapper h2 {
+	font-size: 24px;
+	color: black;
+	font-weight: 700;
+}
+.text-wrapper p {
+	color: var(---grayish-blue);
+}
+.container{
+	display: flex;
+	flex-flow: column;	
+	align-items: center;
+	gap: 10px;
+}
+.teambuilder-karma-card{
+	display: flex;
+	flex-flow: column;
+	gap: 10px;
+}
+.card{
+	position: relative;
+	box-shadow: 5px 10px 18px #888888;
+	border-radius: 5px;
+	padding: 10px 30px;
+	height: 150px;
+	width: 240px;
+}
+.card h1 {
+	font-size: 18px;
+	color: black;
+	font-weight: 700;
+}
+.card h2 {
+	font-size: 13px;
+	font-weight: 500;
+	color: var(---grayish-blue);
+}
+.card img{
+	width: 50px;
+	height: auto;
+	position: absolute; right: 18px; bottom: 12px;
+}
+#card-1{
+	border-top: 5px solid var(---cyan);
+}
+#card-2{
+	border-top: 5px solid var(---red);
+}
+#card-3{
+	border-top: 5px solid var(---orange);
+}
+#card-4{
+	border-top: 5px solid var(---blue);
+}
+footer{
+	display: none;
+}
+@media only screen and (min-width: 800px){
+	*{
+	font-size: 18px;
+	}
+	body{
+		background-color: var(---very-light-gray);
+	}
+	.text-wrapper{
+		width: 560px;
+		display: flex;
+		flex-flow: column;
+		gap: 5px;
+		margin-bottom: 50px;
+	}
+	.card{
+		width: 280px;
+	}
+	.text-wrapper h1 {
+		font-size: 26px;
+	}
+	.card h1 {
+	font-size: 20px;
+	}
+	.card h2 {
+		font-size: 15px;
+	}
+}
+
+@media only screen and (min-width: 1300px){
+	.container{
+		display: flex;
+		flex-flow: row;
+		justify-content: center;
+		gap: 40px;
+	}
+	.teambuilder-karma-card{
+	display: flex;
+	flex-flow: column;
+	gap: 40px;
+}
+}
